@@ -5,7 +5,10 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DataMahasiswa;
 use App\Http\Controllers\UserControlController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Password;
 
 
 Route::middleware(['guest'])->group(function(){
@@ -15,6 +18,8 @@ Route::middleware(['guest'])->group(function(){
     Route::get('/reg', [AuthController::class,'create'])->name('registrasi');
     Route::post('/reg',[AuthController::class,'register']);
     Route::get('/verify/{verify_key}',[AuthController::class,'verify']);
+    Route::get('/lupa',[AuthController::class,'lupapass'])->name('lupapassword');
+    Route::post('/lupa',[AuthController::class,'lupapassword']);
 });
 
 Route::middleware(['auth'])->group(function(){
@@ -43,4 +48,9 @@ Route::middleware(['auth'])->group(function(){
     Route::get('add-to-log', 'App\Http\Controllers\LogActivityController@myTestAddToLog');
     Route::get('log-activity', 'App\Http\Controllers\LogActivityController@logActivity');
 });
+
+Route::get('/homeshop', [Controller::class, 'index'])->name('home');
+Route::get('/shop', [Controller::class, 'shop'])->name('shop');
+Route::get('/transaction', [Controller::class, 'transaction'])->name('transaction');
+Route::get('/contact', [Controller::class, 'contact'])->name('contact');
 

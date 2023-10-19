@@ -30,7 +30,6 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ route('auth') }}">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +48,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Artisan Web</p>
+                <p class="masthead-subheading font-weight-light mb-0"></p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -71,7 +70,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="{{ asset('halaman_depan/assets/img/portfolio/cabin.png') }}" alt="..." />
+                            <img class="img-fluid" src="{{ asset('halaman_depan/assets/img/portfolio/shop.png') }}" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -80,7 +79,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="{{ asset('halaman_depan/assets/img/portfolio/cake.png') }}" alt="..." />
+                            <img class="img-fluid" src="{{ asset('halaman_depan/assets/img/portfolio/university.png') }}" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -266,7 +265,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TOKO ONLINE</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -274,13 +273,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{ asset('halaman_depan/assets/img/portfolio/cabin.png') }}" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="{{ asset('halaman_depan/assets/img/portfolio/shop.png') }}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Project Toko Online dengan Laravel 10 dan Bootstrap</p>
+                                    <div class="d-grid gap-2 col-3 mx-auto">
+                                        <a href="{{ route('shopping') }}" class="btn btn-primary">Go to project</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +296,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DATA MAHASISWA</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -306,13 +304,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{ asset('halaman_depan/assets/img/portfolio/cake.png') }}" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="{{ asset('halaman_depan/assets/img/portfolio/university.png') }}" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Project Data Mahasiswa CRUD dengan menggunakan fitur SMTP, Multi User, dan Sweetalert</p>
+                                    <div class="d-grid gap-2 col-3 mx-auto">
+                                        <a href="{{ route('auth') }}" class="btn btn-primary">Go to project</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -6,6 +6,7 @@ use App\Mail\AuthMail;
 use App\Models\User;
 use App\Http\Controllers\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
@@ -55,6 +56,23 @@ class AuthController extends Controller
         }
     }
 
+    function lupapassword(Request $request)
+    {
+        $request->validate(['email' => 'required|email'],['email.required' => 'Email Wajib Diisi',]);
+ 
+        $status = Password::sendResetLink(
+            $request->only('email')
+        );
+     
+        return $status === Password::RESET_LINK_SENT
+                    ? back()->with(['status' => __($status)])
+                    : back()->withErrors(['email' => __($status)]);
+    }
+
+    function lupapass ()
+    {
+        return view('halaman_auth.lupapassword');
+    }
 
     function create ()
     {

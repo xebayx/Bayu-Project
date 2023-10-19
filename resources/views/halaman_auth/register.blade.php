@@ -93,15 +93,6 @@
 						</span>
 					</div>
 
-					<div class="login100-form-social flex-c-m">
-						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-facebook-f" aria-hidden="true"></i>
-						</a>
-
-						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</div>
 				</form>
 
 				<div class="login100-more" style="background-image: url('{{ asset('halaman_auth/images/bg-01.jpg') }}');">

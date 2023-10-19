@@ -83,7 +83,7 @@
                         </div>
 
                         <div>
-                            <a href="#" class="txt1">
+                            <a href="{{ route('lupapassword') }}" class="txt1">
                                 Forgot Password?
                             </a>
                         </div>
